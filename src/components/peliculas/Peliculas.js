@@ -65,12 +65,8 @@ class Peliculas extends Component {
     render(){
         console.log('renderice RYM');
             return(
-<<<<<<< Updated upstream
-                <main className= "cuerpo"> 
-=======
                 <React.Fragment>
-                <main>
->>>>>>> Stashed changes
+                <main className= "cuerpo"> 
                 <button type="button">Cargar más tarjetas</button>
                 <section className="card-container">
                 {
