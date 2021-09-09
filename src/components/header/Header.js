@@ -12,7 +12,7 @@ class Header extends Component {
     
     render(){
     return (
-        <header>
+        <header className= "header-team">
         <h1>Título/ Nombre de la app</h1>
         <section>
             <p>Ordenar ASC/ DESC</p>

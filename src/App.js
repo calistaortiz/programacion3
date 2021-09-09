@@ -4,6 +4,7 @@ import Footer from  './components/footer/Footer';
 import Peliculas from './components/peliculas/Peliculas';
 
 
+
 function App() {
   return (
     <>
@@ -11,6 +12,7 @@ function App() {
     <Header />
     
     <Peliculas />
+
     
     <Footer />
     

@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import  "./Tarjetas.css";
+
 
 class Tarjetas extends Component {
 
@@ -12,15 +14,15 @@ class Tarjetas extends Component {
 
 render(){
     return(
-        <article>
-                        <section className="navigation">
+        <article className="tarjetas">
+                     <section className="navigation">
                             <div>
                                 <i className="fas fa-chevron-left"></i>
                                 <i className="fas fa-chevron-right"></i>
                             </div>
                             <i className="far fa-window-close"></i>
                         </section>
-                        <main>
+                        <main className="imagen">
                             <img src={`https://image.tmdb.org/t/p/w500${this.props.info.poster_path}`} alt="" />
                             <h3>{this.props.info.title}</h3>
                             <p className="description">{this.props.info.overview}</p>

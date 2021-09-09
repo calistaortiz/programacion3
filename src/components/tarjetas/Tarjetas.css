@@ -1,0 +1,35 @@
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 19%;
+    box-sizing: border-box;
+    /* background-color: black; */
+    font-family: 'Courier New', Courier, monospace;
+    margin: 4%;
+    
+    
+}
+.imagen{
+    text-align: center;
+    font-size: small;
+    padding-top: 15%;
+    margin-inline: 15%;
+   
+
+}
+.card-container{
+    background-color:black;
+    
+}
+.cuerpo{
+    background-color: black;
+}
+
+.header-team{
+    background-color:black;
+}
+
+.team{
+    background-color:rgb(255, 208, 208);
+}

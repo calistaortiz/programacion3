@@ -65,7 +65,7 @@ class Peliculas extends Component {
     render(){
         console.log('renderice RYM');
             return(
-                <main>
+                <main className= "cuerpo"> 
                 <button type="button">Cargar más tarjetas</button>
                 <section className="card-container">
                 {
