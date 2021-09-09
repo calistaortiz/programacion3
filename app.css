@@ -1,0 +1,65 @@
+.App{
+    border: solid black 2px;  
+  }
+  
+  header{
+    border: solid black 2px;
+  }
+  
+  .Titulo{
+    font-size: larger;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .tarjeta {
+    flex-basis: 23%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border: solid black 2px;
+  }
+  
+  .infoTarjeta{
+    padding-left: 10px;
+    padding-bottom: 5px;
+  }
+  
+  .navigation{
+    width: 15px;
+    margin-left: 90%;
+  }
+  
+  .fotosCont{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 70%;
+  }
+  .foto {
+    width: 100%;
+  }
+  
+  footer {
+    background-color: gray;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    bottom: 0px;
+  }
+  
+  .nombres{
+    margin-left: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin-top: 10px;
+  }
+  
+  .nombre {
+    margin-left: 40px;
+    list-style: none; 
+  }
