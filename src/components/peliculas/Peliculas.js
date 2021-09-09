@@ -76,7 +76,7 @@ class Peliculas extends Component {
                 }
                 </section>
             </main>
-            <button onClick={()=> this.addMore()}> Más personajes </button>
+            <button onClick={()=> this.addMore()}> Más películas </button>
             </React.Fragment>
             )
         }
