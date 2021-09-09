@@ -30,6 +30,7 @@ render(){
                                 <p>Original Language: {this.props.info.original_language}</p>
                                 <p>Rating: {this.props.info.vote_average}</p>
                                 <p>Premiere: {this.props.info.release_date}</p>
+                                <p className='more' onClick={()=> this.props.remove(this.props.info.id)}> borrar</p>
                             </section>
                             <a href="">Ver más</a>
                         </main>
