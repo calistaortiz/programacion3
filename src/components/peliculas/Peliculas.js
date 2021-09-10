@@ -80,8 +80,9 @@ class Peliculas extends Component {
                     <h2> CARGANDOOOO.... </h2>
                 }
                 </section>
-            </main>
+
             <button onClick={()=> this.addMore()}> Más películas </button>
+            </main>
             </React.Fragment>
             )
         }

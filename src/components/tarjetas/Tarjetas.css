@@ -12,9 +12,9 @@
     width: 100%;
     height: auto;
     border-radius: 10px;
-   
-
 }
+
+
 .card-container{
     background-color:black;
     
@@ -29,4 +29,14 @@
 
 .team{
     background-color:rgb(255, 208, 208);
+}
+
+.more{
+    background-color: white;
+    border: none;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }

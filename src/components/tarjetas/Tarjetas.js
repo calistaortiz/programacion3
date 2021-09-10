@@ -16,13 +16,6 @@ render(){
     return(
         <div className="tarjetaPelicula">
                             
-                                          <section className="navigation">
-                                                <div>
-                                                    <i className="fas fa-chevron-left"></i>
-                                                    <i className="fas fa-chevron-right"></i>
-                                                </div>
-                                                <i className="far fa-window-close"></i>
-                                            </section> 
                             <img src={`https://image.tmdb.org/t/p/w500${this.props.info.poster_path}`} alt="" />
                             <h3>{this.props.info.title}</h3>
                             <p className="description">{this.props.info.overview}</p>
@@ -30,7 +23,7 @@ render(){
                                 <p>Original Language: {this.props.info.original_language}</p>
                                 <p>Rating: {this.props.info.vote_average}</p>
                                 <p>Premiere: {this.props.info.release_date}</p>
-                                <p className='more' onClick={()=> this.props.remove(this.props.info.id)}> borrar</p>
+                                <button className='more' onClick={()=> this.props.remove(this.props.info.id)}> borrar</button>
                             </section>
                             <a href="">Ver más</a>
                         </div>
