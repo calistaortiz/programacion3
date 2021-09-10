@@ -1,31 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
+import './Header.css'
 
 
-
-class Header extends Component {
-
-    constructor(){
-        super()
-        this.state = {
-        }
-    }
-    
-    render(){
-    return (
-        <header className= "header-team">
-        <h1>Título/ Nombre de la app</h1>
-        <section>
-            <p>Ordenar ASC/ DESC</p>
-            <i className="fas fa-th"></i>
-            <i className="fas fa-align-justify"></i>
-            <form action="">
-                <input type="text" name="search" id="" placeholder="Search" />
-                <button type="submit"><i className="fas fa-search"></i></button>
-            </form>
-        </section>
-        </header>
-      );
-    }
+const Header =(props)=> {
+  return (
+    <header>
+      <h1>Titulo</h1>
+      <p>ASC/ DESC</p>
+      <i className="fas fa-th" onClick={()=>props.cambiarOrientacion("card-container-row")}/>
+      <i className="fas fa-align-justify" onClick={()=>props.cambiarOrientacion("card-container-column")} />
+      <form action>
+        <input type="text" name="search" id placeholder="Search" />
+        <button type="submit"><i className="fas fa-search" /></button>
+      </form>
+    </header>
+  );
 }
 
-  export default Header;
+export default Header;

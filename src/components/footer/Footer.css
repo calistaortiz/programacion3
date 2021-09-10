@@ -1,0 +1,19 @@
+footer{
+    height: 10vh;
+    background-color: blanchedalmond;
+
+}
+
+.nombres {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 1%;
+}
+
+.nombres li {
+ list-style: none;
+ padding-right: 12px;
+}

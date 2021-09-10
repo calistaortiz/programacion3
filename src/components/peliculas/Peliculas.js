@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Tarjetas from '../tarjetas/Tarjetas';
+import FilterField from '../filterField/FilterField';
 
 
 class Peliculas extends Component {
@@ -54,19 +55,23 @@ class Peliculas extends Component {
         })
     }
 
-    filtrarPersonajes(textoAFiltrar){
-        let personajesFiltrados = this.state.personajesIniciales.filter( personaje => personaje.name.toLowerCase().includes(textoAFiltrar.toLowerCase()));
+    filtrarPeliculas(textoAFiltrar){
+        let peliculasFiltradas = this.state.peliculasIniciales.filter( pelicula => pelicula.name.toLowerCase().includes(textoAFiltrar.toLowerCase()));
 
         this.setState({
-            personajes: personajesFiltrados
+            peliculas: peliculasFiltradas
         })
     }
 
     render(){
-        console.log('renderice RYM');
             return(
                 <React.Fragment>
                 <main className= "cuerpo"> 
+                    <FilterField filtrarPeliculas={(textoAFiltrar)=>this.filtrarPeliculas(textoAFiltrar)}/>
+                  
+                    <div className="row card-container"></div>
+
+
                 <button type="button">Cargar más tarjetas</button>
                 <section className="card-container">
                 {

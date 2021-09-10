@@ -1,0 +1,26 @@
+header{
+    height: 10vh;
+    width: 100%;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header h1{ 
+    margin: auto auto auto 2%;
+    width: 35%;
+}
+
+header form{
+    margin: auto 2% auto 3%;
+}
+
+header p{
+    margin: auto 0 auto 0;
+}
+
+header i{
+    margin: auto 0 auto 2%;
+}
