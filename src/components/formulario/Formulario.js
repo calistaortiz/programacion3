@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 
 class Formulario extends Component{
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state ={
-            valor:''
+             filterBy:''
         }
     }
     evitarSubmit(e){
@@ -14,17 +14,18 @@ class Formulario extends Component{
 
     controlarCambios(event){
         this.setState({
-            valor: event.target.value
-        }, () => console.log(this.state.valor))
+            filterBy: event.target.value
+        }, () => this.props.filtrarPeliculas(this.state.filterBy)
         
+    );
     }
 
     render(){
         return(
-            <form action="" onSubmit={(event)=>this.evitarSubmit(event)}>
-                <input type="text" onChange={(even)=>this.controlarCambios(even)} value={this.state.valor} placehoder='ingrese su nombre'/>
-                <button type="submit">Enviar</button>
+         <div>  <form onSubmit={(event)=>this.evitarSubmit(event)}>
+               <input type="text" onChange={(event)=>this.controlarCambios(event)} value={this.state.valor} placehoder='buscar'/>
             </form>
+        </div>
         )
     }
 

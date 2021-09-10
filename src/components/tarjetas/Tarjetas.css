@@ -1,8 +1,6 @@
-.tarjetas{
-    display: flex;
-    flex-wrap: wrap;
+.tarjetaPelicula{
     height: auto;
-    width: 19%;
+    width: 25%;
     box-sizing: border-box;
     /* background-color: black; */
     font-family: 'Courier New', Courier, monospace;
@@ -10,11 +8,10 @@
     
     
 }
-.imagen{
-    text-align: center;
-    font-size: small;
-    padding-top: 15%;
-    margin-inline: 15%;
+.tarjetaPelicula img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
    
 
 }

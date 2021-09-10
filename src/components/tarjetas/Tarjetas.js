@@ -14,15 +14,15 @@ class Tarjetas extends Component {
 
 render(){
     return(
-        <article className="tarjetas">
-                     <section className="navigation">
-                            <div>
-                                <i className="fas fa-chevron-left"></i>
-                                <i className="fas fa-chevron-right"></i>
-                            </div>
-                            <i className="far fa-window-close"></i>
-                        </section>
-                        <main className="imagen">
+        <div className="tarjetaPelicula">
+                            
+                                          <section className="navigation">
+                                                <div>
+                                                    <i className="fas fa-chevron-left"></i>
+                                                    <i className="fas fa-chevron-right"></i>
+                                                </div>
+                                                <i className="far fa-window-close"></i>
+                                            </section> 
                             <img src={`https://image.tmdb.org/t/p/w500${this.props.info.poster_path}`} alt="" />
                             <h3>{this.props.info.title}</h3>
                             <p className="description">{this.props.info.overview}</p>
@@ -33,8 +33,8 @@ render(){
                                 <p className='more' onClick={()=> this.props.remove(this.props.info.id)}> borrar</p>
                             </section>
                             <a href="">Ver más</a>
-                        </main>
-                    </article>
+                        </div>
+                    
     )
     }
 }
