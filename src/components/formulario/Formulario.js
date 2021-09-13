@@ -22,7 +22,8 @@ class Formulario extends Component{
 
     render(){
         return(
-         <div>  <form onSubmit={(event)=>this.evitarSubmit(event)}>
+         <div className='buscar'>  
+            <form onSubmit={(event)=>this.evitarSubmit(event)}>
                <input type="text" onChange={(event)=>this.controlarCambios(event)} value={this.state.valor} placehoder='buscar'/>
             </form>
         </div>

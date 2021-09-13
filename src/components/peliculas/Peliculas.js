@@ -79,7 +79,8 @@ class Peliculas extends Component {
                 {
                     this.state.peliculas.length !== 0?
                     this.state.peliculas.map((pelicula, idx)=> <Tarjetas info={pelicula} key={idx+pelicula.title} remove={(peliculaABorrar) => this.deleteCard(peliculaABorrar)} />):
-                     <div className="loader"></div>
+                    //  <div className="loader"></div>
+                    <h2>No hay datos que coincidan con su búsqueda</h2>
                 }
                 </section>
 
