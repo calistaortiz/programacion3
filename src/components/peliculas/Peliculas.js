@@ -74,7 +74,7 @@ class Peliculas extends Component {
                   
 
 
-                <button type="button">Cargar más tarjetas</button>
+               
                 <section className="card-container">
                 {
                     this.state.peliculas.length !== 0?
@@ -83,7 +83,7 @@ class Peliculas extends Component {
                 }
                 </section>
 
-            <button onClick={()=> this.addMore()}> Más películas </button>
+            <button className='agregarMas' onClick={()=> this.addMore()}> Más películas </button>
             </main>
             </React.Fragment>
             )
