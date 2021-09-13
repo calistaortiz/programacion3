@@ -79,11 +79,14 @@ class Peliculas extends Component {
                 {
                     this.state.peliculas.length !== 0?
                     this.state.peliculas.map((pelicula, idx)=> <Tarjetas info={pelicula} key={idx+pelicula.title} remove={(peliculaABorrar) => this.deleteCard(peliculaABorrar)} />):
-                    <h2> CARGANDOOOO.... </h2>
+                     <div className="loader"></div>
                 }
                 </section>
 
-            <button className='agregarMas' onClick={()=> this.addMore()}> Más películas </button>
+                <div>
+                    <button className= "buton" onClick={() => this.addMore()}> Más películas </button>
+                </div>
+
             </main>
             </React.Fragment>
             )
