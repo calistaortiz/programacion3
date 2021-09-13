@@ -15,13 +15,14 @@ class Tarjetas extends Component {
     viewMore(){
         if(this.state.viewMore){
             this.setState({
+                viewMore: false,
                 text:'Ver más',
-                viewMore: false
             })
         }else{
             this.setState({
-                text: 'Ver menos',
+                
                 viewMore: true,
+                text: 'Ver menos',
             })
         }
     }
@@ -31,14 +32,14 @@ render(){
         <div className="tarjetaPelicula">
                             
                             <img src={`https://image.tmdb.org/t/p/w500${this.props.info.poster_path}`} alt="" />
-                            <h3>{this.props.info.title}</h3>
-                            <p className="description">DESCRIPCIÓN: {this.props.info.overview}</p>
-                            <section className="aditional-info">
-                                <p >ORIGINAL LANGUAGE: {this.props.info.original_language}</p>
-                                <p className={` ${this.state.viewMore ? 'show' : 'hide'}`}>RATING: {this.props.info.vote_average}</p>
-                                <p className={ this.state.viewMore ? '' : 'hide' }>PREMIERE: {this.props.info.release_date}</p>
-                                <button className='remove' onClick={()=> this.props.remove(this.props.info.id)}> borrar</button>
+                            <h3><strong>{this.props.info.title}</strong></h3>
+                            <p className="description"> <strong> Descripción: </strong> {this.props.info.overview}</p>
+                            <section className={`${this.state.viewMore ? 'aditional-info-show': 'aditional-info'}`}>
+                                <p> <strong> Lenguaje original: </strong> {this.props.info.original_language}</p>
+                                <p> <strong> Rating: </strong> {this.props.info.vote_average}</p>
+                                <p> <strong> Fecha de estreno:</strong> {this.props.info.release_date}</p>
                             </section>
+                            <button className='remove' onClick={()=> this.props.remove(this.props.info.id)}> borrar</button>
                             <button className='more' onClick={ () => this.viewMore()} >{this.state.text}</button>
                         </div>
                     

@@ -5,7 +5,7 @@ import './Header.css'
 const Header =(props)=> {
   return (
     <header>
-      <h1>Titulo</h1>
+      <a href="http://localhost:3000/" className='titulo'> NETFLY </a>
       <p>ASC/ DESC</p>
       <i className="fas fa-th" onClick={()=>props.cambiarOrientacion("card-container-row")}/>
       <i className="fas fa-align-justify" onClick={()=>props.cambiarOrientacion("card-container-column")} />
