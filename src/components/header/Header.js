@@ -1,15 +1,15 @@
 import React from 'react';
 import './Header.css'
+import Formulario from '../formulario/Formulario';
 
 
-const Header =(props)=> {
+function Header (props) {
   return (
     <header>
       {/* // <img src="../public/images/popcorn.png" alt="" /> // */}
       <a href="http://localhost:3000/" className='titulo'> NETFLY </a>
-     
-      <i className="fas fa-th" onClick={()=>props.cambiarOrientacion("card-container-row")}/>
-      <i className="fas fa-align-justify" onClick={()=>props.cambiarOrientacion("card-container-column")} />
+      <div><Formulario filtrarPeliculas={(textoAFiltrar) => props.filtrarPeliculas(textoAFiltrar)} /> </div> 
+      
      
     </header>
   );

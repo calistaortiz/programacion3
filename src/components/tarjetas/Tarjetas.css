@@ -1,5 +1,5 @@
 /* vertical */
-.tarjetaPelicula{
+.tarjetaRow{
     height: auto;
     width: 95%;
     box-sizing: border-box;
@@ -14,13 +14,14 @@
     flex-wrap: wrap;
     flex-direction: row;
 }
-.tarjetaPelicula img{
+.tarjetaRow img{
     width: 20%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0rem 0rem 6px 6px rgb(31, 34, 41);
+    margin: 3% 3%;
 }
-.ordenRow{
+.tarjetaRow .ordenRow{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -28,22 +29,24 @@
     padding-left: 2%;
     justify-content: space-between;
 }
-.description{
-    /* padding-top: 7%; */
-}
-.tarjetaPelicula h3{
+
+.tarjetaRow h3{
     padding-left: 1%;
 }
-.more{
+.tarjetaRow .more{
     width: 15%;
 }
-.remove{
+.tarjetaRow .remove{
     width: 15%;
+    margin-top: 2%;
+}
+.tarjetaRow:hover{
+    box-shadow: 0rem 0rem 10px 8px rgb(58, 59, 69);
 }
 
 /* cuadraditos */
 
-/* .tarjetaPelicula{
+.tarjetaPelicula{
     height: auto;
     width: 25%;
     box-sizing: border-box;
@@ -59,7 +62,11 @@
     border-radius: 10px;
     margin-bottom: 3%;
     box-shadow: 0rem 0rem 6px 6px rgb(31, 34, 41);
-} */
+}
+.tarjetaPelicula .remove{
+    margin-left: 2%;
+}
+/* aca */
 
 .tarjetaPelicula:hover{
     box-shadow: 0rem 0rem 10px 8px rgb(58, 59, 69);
@@ -84,7 +91,8 @@
     font-size: 16px;
 }
 .remove:hover{
-    box-shadow: 0rem 0rem 4px 2px rgb(182, 183, 190);
+    box-shadow: 0rem 0rem 4px 2px rgb(201, 22, 22);
+    color: rgb(201, 22, 22);
 }
 .more{
     border-radius: 5px;
