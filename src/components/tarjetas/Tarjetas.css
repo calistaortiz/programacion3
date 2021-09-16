@@ -1,4 +1,49 @@
+/* vertical */
 .tarjetaPelicula{
+    height: auto;
+    width: 95%;
+    box-sizing: border-box;
+    background-color: rgb(15, 15, 15);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    border-radius: 15px;
+    padding: 1%;
+    margin-bottom: 3%;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.tarjetaPelicula img{
+    width: 20%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0rem 0rem 6px 6px rgb(31, 34, 41);
+}
+.ordenRow{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 2%;
+    justify-content: space-between;
+}
+.description{
+    /* padding-top: 7%; */
+}
+.tarjetaPelicula h3{
+    padding-left: 1%;
+}
+.more{
+    width: 15%;
+}
+.remove{
+    width: 15%;
+}
+
+/* cuadraditos */
+
+/* .tarjetaPelicula{
     height: auto;
     width: 25%;
     box-sizing: border-box;
@@ -8,18 +53,17 @@
     border-radius: 15px;
     padding: 1%;
 }
-.tarjetaPelicula:hover{
-    box-shadow: 0rem 0rem 10px 8px rgb(58, 59, 69);
-}
-
 .tarjetaPelicula img{
     width: 100%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 3%;
     box-shadow: 0rem 0rem 6px 6px rgb(31, 34, 41);
-}
+} */
 
+.tarjetaPelicula:hover{
+    box-shadow: 0rem 0rem 10px 8px rgb(58, 59, 69);
+}
 
 .header-team{
     background-color:black;
@@ -39,6 +83,9 @@
     display: inline-block;
     font-size: 16px;
 }
+.remove:hover{
+    box-shadow: 0rem 0rem 4px 2px rgb(182, 183, 190);
+}
 .more{
     border-radius: 5px;
     background-color: white;
@@ -50,11 +97,13 @@
     font-size: 16px;
     /* poner a los dos bottones distancia */
 }
+.more:hover{
+    box-shadow: 0rem 0rem 4px 2px rgb(182, 183, 190);
+}
 .aditional-info{
     display: none;
     
 }
-
 .aditional-info-show{
     display: block;
 }

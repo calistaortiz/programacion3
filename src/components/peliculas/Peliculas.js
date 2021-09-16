@@ -85,7 +85,7 @@ class Peliculas extends Component {
                 </section>
 
                 <div>
-                    <button className= "buton" onClick={() => this.addMore()}> Más películas </button>
+                    <button className= "botonAgregar" onClick={() => this.addMore()}> Más películas </button>
                 </div>
 
             </main>

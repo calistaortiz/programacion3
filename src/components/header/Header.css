@@ -1,25 +1,27 @@
 header{
     height: 10vh;
     width: 100%;
-    background-color: blanchedalmond;
+    background-color: rgb(16, 36, 49);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-end;
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: rgb(233, 229, 223);
 }
 
 .titulo{ 
     margin: auto auto auto 2%;
     text-decoration: none;
     font-size: 40px;
-    color: black;
+    /* color: black; */
+    color: rgb(233, 229, 223);
     
 }
 .titulo:hover{
     text-decoration: none;
-    color: black;
+    /* color: black; */
+    color: rgb(233, 229, 223);
 }
 img{
     width: 300px;
