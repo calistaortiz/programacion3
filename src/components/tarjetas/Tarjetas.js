@@ -37,11 +37,8 @@ class Tarjetas extends Component {
           </h3>
           <p className="description">
              
-            <strong>
-               
-              <u> Descripción</u>: 
-            </strong> 
-            {this.props.info.overview}
+            <strong> <u>Descripción</u>: </strong>
+              {this.props.info.overview}
           </p>
           <section
             className={`${
@@ -52,9 +49,9 @@ class Tarjetas extends Component {
                
               <strong>
                  
-                <u> Lenguaje original</u>: 
+                <u> Lenguaje original </u>: 
               </strong> 
-              {this.props.info.original_language}
+               {this.props.info.original_language}
             </p>
             <p>
                
@@ -62,7 +59,7 @@ class Tarjetas extends Component {
                  
                 <u> Rating</u>: 
               </strong> 
-              {this.props.info.vote_average}
+               {this.props.info.vote_average}
             </p>
             <p>
                
@@ -70,7 +67,7 @@ class Tarjetas extends Component {
                  
                 <u> Fecha de estreno</u>:
               </strong> 
-              {this.props.info.release_date}
+               {this.props.info.release_date}
             </p>
           </section>
           <button className="more" onClick={() => this.viewMore()}>

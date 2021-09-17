@@ -8,7 +8,9 @@ function Header (props) {
     <header>
       {/* // <img src="../public/images/popcorn.png" alt="" /> // */}
       <a href="http://localhost:3000/" className='titulo'> NETFLY </a>
-      <div><Formulario filtrarPeliculas={(textoAFiltrar) => props.filtrarPeliculas(textoAFiltrar)} /> </div> 
+      <div className='formulario'>
+        <Formulario filtrarPeliculas={(textoAFiltrar) => props.filtrarPeliculas(textoAFiltrar)} /> 
+      </div> 
       
      
     </header>

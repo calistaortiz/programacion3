@@ -41,10 +41,25 @@
 .botonAgregar:hover{
     box-shadow: 0rem 0rem 4px 2px rgb(182, 183, 190);
 }
-.cuerpo i{
-    padding-left: 5%;
+.orden i{
+    margin-left: 2%;
+    cursor:pointer;
+    font-size: 23px;
+    color: rgb(233, 229, 223);
 }
-
+.orden i:hover{
+    box-shadow: 0rem 0rem 4px 3px rgba(18, 18, 19, 0.89);
+}
+.orden{
+    width: 100%;
+    background-color: rgb(16, 36, 49);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    padding-right: 3%;
+    padding-bottom: 2%;
+}
 
 
 

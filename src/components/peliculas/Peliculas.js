@@ -90,6 +90,7 @@ class Peliculas extends Component {
         />
 
         <main className="cuerpo">
+        <div className='orden'> 
           <i
             className="fas fa-th"
             onClick={() => this.vertical()}
@@ -99,6 +100,7 @@ class Peliculas extends Component {
             onClick={() =>
               this.horizontal()}
           />
+        </div>
 
           <section className="card-container">
             {this.state.peliculas.length !== 0 ? (

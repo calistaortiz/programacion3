@@ -27,16 +27,16 @@ img{
     width: 300px;
 }
 
+/* header i{
+    margin: auto 0 auto 4%;
+    padding-right: 2%;
+} */
 
-header form{
-    margin: auto 2% auto 3%;
+.formulario{
+    padding-top: 1.5%;
+    padding-right: 3%;
+    /* padding-right: 7%; */
 }
-
-header p{
-    margin: auto 0 auto 0;
-}
-
-header i{
-    margin: auto 0 auto 2%;
-    padding-right: 1%;
+.buscar form input{
+    border-radius: 3px;
 }
