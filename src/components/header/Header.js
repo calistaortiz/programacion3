@@ -6,7 +6,6 @@ import Formulario from '../formulario/Formulario';
 function Header (props) {
   return (
     <header>
-      {/* // <img src="../public/images/popcorn.png" alt="" /> // */}
       <a href="http://localhost:3000/" className='titulo'> NETFLY </a>
       <div className='formulario'>
         <Formulario filtrarPeliculas={(textoAFiltrar) => props.filtrarPeliculas(textoAFiltrar)} /> 
