@@ -27,6 +27,7 @@ class Peliculas extends Component {
         this.setState({
           peliculas: data.results,
           peliculasIniciales: data.results,
+          isLoaded: true,
         });
       })
       .catch((error) => console.log(error));
@@ -102,8 +103,12 @@ class Peliculas extends Component {
           />
         </div>
 
-          <section className="card-container">
-            {this.state.peliculas.length !== 0 ? (
+        <section className="card-container">
+
+          {this.state.isLoaded === false ? 
+                <h1>Cargando...</h1>
+                : 
+            (this.state.peliculas.length !== 0 ? (
               this.state.peliculas.map((pelicula, idx) => (
                 <Tarjetas
                   clase={this.state.peliculaClase}  
@@ -115,8 +120,10 @@ class Peliculas extends Component {
             ) : (
               //  <div className="loader"></div>
               <h2>No hay datos que coincidan con su búsqueda</h2>
-            )}
-          </section>
+            ) )}
+        </section>
+
+          
 
           <div>
             <button className="botonAgregar" onClick={() => this.addMore()}>
