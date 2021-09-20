@@ -110,12 +110,13 @@ class Peliculas extends Component {
                 : 
             (this.state.peliculas.length !== 0 ? (
               this.state.peliculas.map((pelicula, idx) => (
+                                //Props 
                 <Tarjetas
                   clase={this.state.peliculaClase}  
                   info={pelicula}
                   key={idx + pelicula.title}
                   remove={(peliculaABorrar) => this.deleteCard(peliculaABorrar)}
-                />
+                /> 
               ))
             ) : (
               //  <div className="loader"></div>
