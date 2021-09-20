@@ -22,3 +22,4 @@ function App() {
 }
 
 export default App;
+//ppl componente, la app
