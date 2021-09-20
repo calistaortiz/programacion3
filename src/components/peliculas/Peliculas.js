@@ -114,7 +114,7 @@ class Peliculas extends Component {
                 <Tarjetas
                   clase={this.state.peliculaClase}  
                   info={pelicula}
-                  key={idx + pelicula.title}
+                  key={pelicula.title}
                   remove={(peliculaABorrar) => this.deleteCard(peliculaABorrar)}
                 /> 
               ))
